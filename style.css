@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #0d47a1;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?technology,coding') center/cover no-repeat;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero span {
+  color: #ffcc00;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background: #ffcc00;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffa000;
+}
+
+/* Sections */
+section {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Skills */
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #0d47a1;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
